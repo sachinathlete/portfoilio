@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sachin Portfolio Website</title>
+	<!---custom css link---->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+	<script src="https://kit.fontawesome.com/66c4685473.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<!------Header Section------>
+	<header>
+		<a href="#" class="logo">Devlo<span>pe</span>r..</a>
+		<ul class="navlist">
+			<li><a href="#home" class="active">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#services">MySkills</a></li>
+			<li><a href="#portfolio">LatestProjects</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+		<div class="bx bx-menu" id="menu-icon"></div>
+	</header>
+
+	<!---------Home Section--------------->
+	<section class="home" id="home">
+		<div class="home-text">
+			<div class="slide">
+				<span class="one">Hello</span>
+				<span class="two">I'm</span>
+			</div>
+			<h1>Sachin</h1>
+			<h3>Website <span id="type-it"></span></h3>
+			<div class="button">
+				<a href="#" class="btn">About Me</a>
+			</div>
+			<div class="images">
+				<img src="img/zigzag_shape-transformed-removebg-preview.png" class="shape">
+				<img src="img/round_face-removebg.png" class="boy">
+			</div>
+		</div>
+	</section>	
+
+	<!---------about Section --------------->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="img/round_face-removebg.png">
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title"> About Me</h1>
+					<p> I am an organised, efficient and hard working person, and am willing to discover and accept new ideas which can be put into practice effectively. 
+						I am a good listener and learner, able to communicate well with a group and on an individual level. 
+						I am able to motivate and direct my talents and skills to meet objectives.To work with an organization which allow me to utilize my knowledge and continuously focuses on the development of new technologies that helps everyone’s life easier .</p>
+					
+					<div class="tab-titles">
+						<p class ="tab-links active-links" onclick="opentab('skills')"> Education </p>
+						<p class ="tab-links" onclick="opentab('experience')"> Experience</p>
+						<p class ="tab-links" onclick="opentab('education')"> Achivements </p>
+					</div>
+					
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>2020-2024</span><br>B.E.Computer Science and Engineering with CGPA of "8.28"</li>
+							<li><span>2020</span><br>12th percentage - "62.7"</li>
+							<li><span>2018</span><br>10th percentage - "60.7"</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li><span>NSIC (Chennai)</span><br>30 days Intern on Designing Web/App interfaces</li>
+							<li><span>Irohub Infotech (Kerala)</span><br>15 days Intern on App Development</li>
+							<li><span>Suven Consultants Technology</span><br> 15 days on Java Development</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li><span>MICA International Conference</span><br>Won 2nd Place with cash prize of 2lakhs under the title  " Healthcare management of Data using Blockchain " </li>
+							<li><span>Published a Jouneral</span><br>Critical Healthcare management of data in covid-19 using Blockchain Technology</li>
+							<li><span>Impellz'2k23</span><br>Won a First place by creating a chatbot with title of "Medicare bot"</li>
+						</ul>
+
+						
+					</div>
+					<a href="#" class="btn">More About </a>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+	<script>
+
+		var tablinks = document.getElementsByClassName("tab-links")
+		var tabcontents = document.getElementsByClassName("tab-contents")
+		
+		function opentab(tabname){
+			for(tablink of tablinks){
+				tablink.classList.remove("active-links");
+			}
+			for(tabcontent of tabcontents){
+				tabcontent.classList.remove("active-tab");
+			}
+			event.currentTarget.classList.add("active-links")
+			document.getElementById(tabname).classList.add("active-tab")
+		}
+	
+	</script>
+	
+	<!-----------Services Section-------------->
+	<section class="services" id="services">
+	<div class="main-text">
+		<h2><span>My</span>Skills</h2>
+	</div>
+	<div class="services-content">
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-brands fa-python"></i>
+			</div>
+			<h3>Python</h3>
+			<p>Python is a high-level programming language.Its design philosophy emphasizes code readability with the use of significant indentation via the off-side.</p>
+			
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class='bx bx-code-alt'></i>
+			</div>
+			<h3>C Programming</h3>
+			<p>C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential.</p>
+			
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-brands fa-html5"></i>
+			</div>
+			<h3>HTML & CSS</h3>
+			<p>HTML and CSS are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the layout for a variety of devices.</p>
+			
+		</div>
+		
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-solid fa-database"></i>
+			</div>
+			<h3>MySQL</h3>
+			<p>MySQL is a relational database management system based on the SQL, which is the popular language for accessing and managing the records in the database.</p>
+			
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-brands fa-ethereum"></i>
+			</div>
+			<h3>Blockchain(Basic)</h3>
+			<p>Blockchains technology store information on monetary transactions using cryptocurrencies, but they also store other types of information, such as product tracking and other data. </p>
+			
+		</div>
+
+		<div class="box">
+			<div class="s-icons">
+				<i class="fa-sharp fa-solid fa-pager"></i>
+			</div>
+			<h3>UI/UX Design</h3>
+			<p>UI/UX design is to create a user experience that customers to stick with a brand.While a UX Designer decides how the interface works, the UI designer decides how the interface looks.</p>
+			
+		</div>
+	</div>
+
+</section>
+
+<!-----------Portfolio Section--------------->
+<section class="portfolio" id="portfolio">
+	<div class="main-text">
+		<h2><span>latest</span>Projects</h2>
+	</div>
+	<div class="portfolio-content">
+		<div class="row">
+			<img src="img/project1.jpg" >
+			<div class="layer">
+				<h1>Blockchain voting system</h1>
+				<p style="color: black;"> Encryption – A blockchain-enabled electronic voting system will work by sending a single cryptocurrency or token to each eligible voter. Each candidate contesting the election will have a unique wallet address. The voters will vote by sending their token or crypto to the candidate of their choice.</p>
+				<a href="https://www.youtube.com/watch?v=GPKzINNpiVA"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/project2.jpg">
+			<div class="layer">
+				<h1>Hospital management system</h1>
+				<p style="color: black;">A Hospital Management System (HMS) is a software designed to handle electronic medical records, laboratory tests and their results, radiology images, pharmacy records etc. It helps in managing patient data efficiently so that hospitals can provide better care and services.</p>
+				<a href="https://www.youtube.com/watch?v=6FOAyE3ZuUY&t=148s"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/project3.jpg" >
+			<div class="layer">
+				<h1>UI/UX Design on login page</h1>
+				<p style="color: black;">A web page or an entry page to a web/mobile application that requires user identification and authentication, regularly performed by entering a username and password combination.</p>
+				<a href="https://www.youtube.com/watch?v=QU1lS_607mo"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		<div class="row">
+			<img src="img/project4.jpg" >
+			<div class="layer">
+				<h5>Face regonisation using AI</h5>
+				<p style="color: black;">Face detection, also called facial detection, is an artificial intelligence (AI)-based computer technology used to find and identify human faces in digital images and video. Face detection technology is often used for surveillance and tracking of people in real time.</p>
+				<a href="#"> <i class='bx bx-link-external'></i></a>
+			</div>
+		</div>
+
+		
+
+</section>
+
+<!------------------Contact section------------>
+<section class="contact" id="contact">
+	<div class="contact-text">
+		<h2>Contact <span>Me...!</span></h2>
+		<h4>"Alone we can do so little;</h4>
+		<h4>together we can do so much."</h4>
+		<p>I’m looking forward to work together</p>
+		<p><i class="fa-solid fa-phone"></i> +91 6369439364</p>
+		<p><i class="fa-solid fa-envelope"></i>sachinskm82@gmail.com</p>
+
+		<div class="contact-icons">
+			<a href="https://www.linkedin.com/in/sachin-k-m-7b9213210/"><i class='bx bxl-linkedin'></i></a>
+			<a href="https://github.com/sachinathlete"><i class='bx bxl-github' ></i></a>
+			<a href="https://instagram.com/athletesachin?igshid=MzNlNGNkZWQ4Mg=="><i class='bx bxl-instagram-alt' ></i></a>
+			<a href="https://www.youtube.com/channel/UCzm4px3NDk6OPeTBGPAQtSA"><i class='bx bxl-youtube' ></i></a>
+		</div>
+
+	</div>
+	
+</section>
+
+<!---------End Section---------->
+<section class="end">
+	<div class="last-text">
+		<p>Design By "skm"</p>
+	</div>
+	<div class="top">
+		<a href="#home"><i class='bx bx-up-arrow-alt' ></i></a>
+	</div>
+</section>
+
+</body>
+<script src="script.js"></script>
+</html>
